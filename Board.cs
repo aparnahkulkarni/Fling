@@ -20,7 +20,7 @@ namespace ConsoleApplication2
             FlingLevels = new List<string>();
         }
 
-        public static T DeepClone<T>(T obj)
+        public static T DeepClone<T>(T obj) // to avoid copy by reference
         {
             using (var ms = new MemoryStream())
             {
